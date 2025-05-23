@@ -20,21 +20,14 @@ class Server {
     }
 
     routes() {
-        this.app.get('/', (req: Request, res: Response) => { // Ruta de la raiz
-            res.send("<h1>Hola mundo</h1>");
-        });
-
-        this.app.get('/api', (req: Request, res: Response) => { // Ruta de la API
-            res.send('<h1>Hola desde la api</h1>');
-        });
 
         this.app.use((req: Request, res: Response) => { // Ruta no existente
             res.send('<h1>404 Not Found</h1>');
         });
     }
 
-    listen() {
-        this.app.listen(this.port, () => {
+    async listen() {
+        await this.app.listen(this.port, () => {
             console.log("Server running on port http://localhost:" + this.port);
         });
     }
