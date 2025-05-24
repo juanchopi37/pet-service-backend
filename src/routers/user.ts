@@ -1,5 +1,7 @@
-import {Router, Request, Response} from 'express'
+import {Router} from 'express'
+import type {Request, Response} from 'express'
 
+const app = router
 
 const userApi = (app) => {
   const router = Router()
