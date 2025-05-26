@@ -1,15 +1,22 @@
-# back-end
+# Pet-VET backend
 
-To install dependencies:
+Backend para la aplicación pet-VET la cual es una plataforma de gestión de citas veterinarias
 
-```bash
-bun install
-```
+Tecnologías utilizadas para la construcción de este Backend:
 
-To run:
+Base de datos:
 
-```bash
-bun run index.ts
-```
+- MySQL - MariaDB
 
-This project was created using `bun init` in bun v1.2.13. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+Framework para la construcción:
+
+- Express.js
+
+ORM para la gestión de las bases de datos:
+
+- Sequalize
+
+Otras dependencias
+
+- Cors
+- Node.js => Runtime / Alternativamente Bun

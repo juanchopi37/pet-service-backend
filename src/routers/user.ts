@@ -1,11 +1,10 @@
-import {Router} from 'express'
-import type {Request, Response} from 'express'
+import { Router } from "express";
+import type { Request, Response } from "express";
 
-const app = router
+const app = Router;
 
-const userApi = (app) => {
-  const router = Router()
+const userApi = (app: void) => {
+  const router = Router();
 
-  app.use('/api/user', router )
-
-}
+  app.use("/api/user", router);
+};
