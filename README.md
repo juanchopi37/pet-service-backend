@@ -1,4 +1,4 @@
-# Pet-VET backend
+# Pet-Care backend
 
 Backend para la aplicación pet-VET la cual es una plataforma de gestión de citas veterinarias
 
